@@ -25,7 +25,19 @@ h1 { font-size:clamp(2.25rem,8.5vw,8.25rem); line-height:.88; letter-spacing:-.0
 .button { border:1px solid var(--ink); padding:13px 16px; font-size:12px; font-weight:600; display:inline-flex; align-items:center; gap:10px; transition:transform .15s,box-shadow .15s; }
 .button:hover { transform:translate(-3px,-3px); box-shadow:3px 3px 0 var(--ink); }
 .button-solid { background:var(--ink); color:var(--cream); }
-.section { border-bottom:1px solid var(--line); padding:3rem 0; }
+  .language-switcher { display:inline-flex; align-items:center; gap:4px; margin-left:6px; }
+  .language-switcher button, .project-filters button { border:1px solid var(--ink); background:var(--cream); color:var(--ink); font:inherit; cursor:pointer; }
+  .language-switcher button { border:0; padding:0; }
+  .language-switcher button:hover, .language-switcher .language-active { text-decoration:underline; text-underline-offset:3px; }
+  .project-filters { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 24px; }
+  .project-filters button { padding:9px 12px; font-size:10px; letter-spacing:.02em; transition:background .2s,color .2s,transform .2s; }
+  .project-filters button:hover { transform:translateY(-2px); }
+  .project-filters .filter-active { background:var(--ink); color:var(--cream); }
+  .projects { transition:opacity .2s ease; }
+  .project { transition:transform .2s ease,box-shadow .2s ease,opacity .2s ease; }
+  .project:hover { transform:translateY(-4px); box-shadow:4px 4px 0 var(--ink); }
+  .section { border-bottom:1px solid var(--line); padding:3rem 0; }
+
 .section-head { display:grid; grid-template-columns:150px 1fr; gap:30px; margin-bottom:40px; }
 .section-label { font-size:11px; }
 .section-title { font-size:clamp(32px,5vw,68px); letter-spacing:-.06em; line-height:.95; margin:0; }
