@@ -46,6 +46,17 @@ h1 { font-size:clamp(2.25rem,8.5vw,8.25rem); line-height:.88; letter-spacing:-.0
 .card-kicker { font-size:11px; margin-bottom:36px; }
 .about-card h3 { font-size:22px; line-height:1.1; max-width:420px; margin:0 0 14px; }
 .about-card p { color:var(--muted); line-height:1.55; margin:0; max-width:520px; }
+h1 span { display:inline-block; font-size:.24em; letter-spacing:-.04em; white-space:nowrap; vertical-align:baseline; }
+.education-extra { margin-top:28px; padding-top:17px; border-top:1px solid var(--line); }
+.education-extra p + p { margin-top:10px; }
+.education-extra strong { color:var(--ink); }
+.experience-card { display:flex; flex-direction:column; gap:24px; }
+.experience-card .card-kicker { margin-bottom:0; }
+.timeline-entry { border-left:2px solid var(--ink); padding-left:16px; }
+.timeline-date { display:block; font-size:10px; margin-bottom:10px; }
+.timeline-entry h3 { font-size:19px; margin:0 0 5px; }
+.timeline-entry .timeline-company { color:var(--ink); font-weight:600; margin:0 0 8px; }
+.timeline-entry > p:last-child { font-size:14px; }
 .skills-grid { display:grid; grid-template-columns:1fr; gap:1px; background:var(--ink); border:1px solid var(--ink); }
 .skill-group { background:var(--cream); padding:22px; min-height:200px; }
 .skill-group h3 { font-size:12px; margin:0 0 28px; }
@@ -64,7 +75,9 @@ h1 { font-size:clamp(2.25rem,8.5vw,8.25rem); line-height:.88; letter-spacing:-.0
 .contact { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:end; }
 .contact h2 { font-size:clamp(42px,7vw,96px); letter-spacing:-.08em; line-height:.88; margin:0; }
 .contact-links { display:flex; flex-direction:column; gap:12px; padding-bottom:5px; }
-.contact-links a { font-size:15px; display:flex; justify-content:space-between; border-bottom:1px solid var(--ink); padding-bottom:10px; }
+.contact-links a { font-size:12px; display:flex; justify-content:space-between; gap:12px; border-bottom:1px solid var(--ink); padding-bottom:10px; }
+.contact-links a span:last-child { text-align:right; overflow-wrap:anywhere; }
+.footer a { display:inline-flex; align-items:center; gap:4px; }
 .footer { display:flex; justify-content:space-between; gap:20px; padding:18px 0 24px; font-size:10px; color:var(--muted); }
 @media (min-width:640px) {
   .portfolio { padding-left:2rem; padding-right:2rem; }
